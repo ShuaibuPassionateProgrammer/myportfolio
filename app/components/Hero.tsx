@@ -7,6 +7,13 @@ import { motion } from "framer-motion";
 export default function Hero() {
 
     return (
-        <section className="text-center space-y-4 pt-10"></section>
+        <section className="text-center space-y-4 pt-10">
+            <motion.h1
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}>
+                {/*  */}
+            </motion.h1>
+        </section>
     );
 }
