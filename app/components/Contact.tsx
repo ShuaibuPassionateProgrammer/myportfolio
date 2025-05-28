@@ -48,7 +48,7 @@ export default function Contact() {
           <Linkedin className="w-5 h-5" /> LinkedIn
         </a>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/ShuaibuPassionateProgrammer/"
           target="_blank"
           className="flex items-center gap-2 text-indigo-600 hover:underline"
         >
