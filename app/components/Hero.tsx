@@ -18,7 +18,8 @@ export default function Hero() {
             <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}>
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-lg sm:text-xl max-w-xl mx-auto text-slate-600 dark:text-slate-300">
                 I built fast, accessible and elegant web experiences using modern frontend technologies
             </motion.p>
         </section>
