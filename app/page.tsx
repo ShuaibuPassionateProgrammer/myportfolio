@@ -1,9 +1,19 @@
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Welcome to My App</h1>
-      <p className="mt-4 text-lg">This is a simple Next.js application.</p>
+    <main className="max-w-5xl mx-auto px-4 py-10 space-y-24">
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
-};
+}
