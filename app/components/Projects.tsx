@@ -9,7 +9,8 @@ const projects = [
   {
     title: "DevFinder",
     description: "A GitHub profile search app using the GitHub API, built with Next.js and Tailwind.",
-    image: "/projects/devfinder.png",
+    /* image: "/projects/devfinder.png", */
+    image: "#",
     tech: ["Next.js", "Tailwind", "API"],
     demo: "https://devfinder.vercel.app",
     code: "https://github.com/your-username/devfinder",
@@ -17,7 +18,8 @@ const projects = [
   {
     title: "Taskify",
     description: "A drag-and-drop kanban board for task management, built with React and Zustand.",
-    image: "/projects/taskify.png",
+    /* image: "/projects/taskify.png", */
+    image: "#",
     tech: ["React", "Zustand", "Framer Motion"],
     demo: "https://taskify.vercel.app",
     code: "https://github.com/your-username/taskify",
