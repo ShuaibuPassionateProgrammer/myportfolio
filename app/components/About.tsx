@@ -1,12 +1,37 @@
+/* File: app/components/About.tsx */
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
-    <section className="text-center space-y-4">
-      <h1 className="text-4xl sm:text-5xl font-heading font-semibold">Hi, I’m Ibrahim Shuaibu Isa</h1>
-      <p className="text-lg text-slate-600 dark:text-slate-300">I build modern, accessible, and performant web experiences.</p>
-      <div className="flex justify-center gap-4 mt-6">
-        <a href="#projects" className="bg-indigo-600 text-white px-6 py-2 rounded-xl hover:bg-indigo-700 transition">About Me</a>
-        <a href="/resume.pdf" target="_blank" className="border border-indigo-600 text-indigo-600 px-6 py-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-slate-800 transition">Download Resume</a>
-      </div>
+    <section id="about" className="max-w-3xl mx-auto text-center space-y-6">
+      <motion.h2
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-3xl sm:text-4xl font-heading font-semibold"
+      >
+        About Me
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+      >
+        I'm a <strong className="text-indigo-600">frontend developer</strong> with a passion for
+        crafting user-centric, performant, and accessible web experiences. I enjoy working with
+        modern frameworks like <strong>React</strong> and <strong>Next.js</strong>, and I love
+        building beautiful UIs with <strong>Tailwind CSS</strong>.
+        <br /><br />
+        Whether it's optimizing performance, creating reusable components, or collaborating in teams,
+        I’m always learning and pushing myself. When I’m not coding, you’ll find me exploring coffee
+        shops or sketching interface ideas.
+      </motion.p>
     </section>
   );
 }
