@@ -38,7 +38,7 @@ export default function Contact() {
           href="mailto:ibrahimshuaibuisa7@gmail.com"
           className="flex items-center gap-2 text-indigo-600 hover:underline"
         >
-          <Mail className="w-5 h-5" /> your.email@example.com
+          <Mail className="w-5 h-5" /> ibrahimshuaibuisa7@gmail.com
         </a>
         <a
           href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279/"
