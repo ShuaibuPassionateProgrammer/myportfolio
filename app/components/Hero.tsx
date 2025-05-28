@@ -13,7 +13,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="text-4xl sm:text-6xl font-heading font-bold"
       >
-        Hi, I’m <span className="text-indigo-600">Your Name</span>
+        Hi, I’m <span className="text-indigo-600">Ibrahim Shuaibu Isa</span>
       </motion.h1>
 
       <motion.p
