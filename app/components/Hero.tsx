@@ -11,7 +11,8 @@ export default function Hero() {
             <motion.h1
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}>
+                transition={{ duration: 0.6 }}
+                className="text-4xl sm:text-5xl font-heading font-bold">
                 {/*  */}
             </motion.h1>
         </section>
