@@ -15,6 +15,7 @@ export default function Hero() {
                 className="text-4xl sm:text-5xl font-heading font-bold">
                 Hi, I'm <span className="text-indigo-600">Ibrahim Shuaibu Isa</span>
             </motion.h1>
+            <motion.p>I built fast, accessible and elegant web experiences using modern frontend technologies</motion.p>
         </section>
     );
 }
