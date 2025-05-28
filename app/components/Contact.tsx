@@ -35,13 +35,13 @@ export default function Contact() {
         className="flex justify-center gap-6"
       >
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:ibrahimshuaibuisa7@gmail.com"
           className="flex items-center gap-2 text-indigo-600 hover:underline"
         >
           <Mail className="w-5 h-5" /> your.email@example.com
         </a>
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279/"
           target="_blank"
           className="flex items-center gap-2 text-indigo-600 hover:underline"
         >
