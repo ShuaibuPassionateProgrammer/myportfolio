@@ -22,13 +22,13 @@ export default function About() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
       >
-        I'm a <strong className="text-indigo-600">frontend developer</strong> with a passion for
+        I&apos;m a <strong className="text-indigo-600">frontend developer</strong> with a passion for
         crafting user-centric, performant, and accessible web experiences. I enjoy working with
         modern frameworks like <strong>React</strong> and <strong>Next.js</strong>, and I love
         building beautiful UIs with <strong>Tailwind CSS</strong>.
         <br /><br />
-        Whether it's optimizing performance, creating reusable components, or collaborating in teams,
-        I’m always learning and pushing myself. When I’m not coding, you’ll find me exploring coffee
+        Whether it&rsquo;s optimizing performance, creating reusable components, or collaborating in teams,
+        I&#39;m always learning and pushing myself. When I&rsquo;m not coding, you&rsquo;ll find me exploring coffee
         shops or sketching interface ideas.
       </motion.p>
     </section>
