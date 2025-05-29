@@ -10,7 +10,7 @@ const projects = [
 		title: "MyPortfolio",
 		description:
 			"Personal portfolio website built with Next.js and Tailwind CSS, featuring a modern design, dark mode, and seamless mobile responsiveness.",
-		image: "/projects/.jportfoliopg",
+		image: "/projects/portfolio.jpg",
 		tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 		category: "Web Development",
 		demo: "https://myportfolio.vercel.app",
