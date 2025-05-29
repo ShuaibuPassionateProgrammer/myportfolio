@@ -48,7 +48,7 @@ export default function About() {
           className="space-y-6"
         >
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            I'm a <strong className="text-indigo-600">Full-Stack Software Developer</strong> with over 
+            I&apos;m a <strong className="text-indigo-600">Full-Stack Software Developer</strong> with over 
             <strong className="text-purple-600"> 5 years of experience</strong> crafting scalable web and mobile applications. 
             My passion lies in building robust, user-centered products that solve real-world problems.
           </p>
@@ -62,8 +62,8 @@ export default function About() {
           </p>
 
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            Whether it's architecting scalable systems, optimizing performance, or mentoring fellow developers, 
-            I'm always pushing the boundaries of what's possible. I believe in clean architecture, 
+            Whether it&lsquo;s architecting scalable systems, optimizing performance, or mentoring fellow developers, 
+            I&#39;m always pushing the boundaries of what&lsquo;s possible. I believe in clean architecture, 
             intuitive design, and the power of collaboration.
           </p>
         </motion.div>
