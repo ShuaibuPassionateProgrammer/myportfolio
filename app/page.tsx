@@ -5,10 +5,14 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ThemeToggler from "./components/ThemeToggler";
 
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto px-4 py-10 space-y-24">
+      <header className="flex justify-end p-4">
+        <ThemeToggler />
+      </header>
       <Hero />
       <About />
       <Projects />
