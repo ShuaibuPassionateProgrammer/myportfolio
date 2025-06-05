@@ -41,7 +41,7 @@ export default function About() {
       <div className="flex justify-center">
         <div className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg rounded-full p-2 shadow-lg border-4 border-indigo-100 dark:border-slate-800">
           <Image
-            src="/img/rounded_profile.png"
+            src="/img/mine.png"
             alt="Ibrahim Shuaibu Isa"
             width={144}
             height={144}
