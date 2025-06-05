@@ -75,16 +75,20 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="space-y-10 text-center">
+    <section id="contact" className="max-w-2xl mx-auto space-y-10 text-center">
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-3xl sm:text-4xl font-heading font-semibold"
+        className="text-4xl sm:text-5xl font-heading font-semibold"
       >
         Contact Me
       </motion.h2>
+
+      <div className="flex justify-center">
+        <div className="h-1 w-20 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 mb-4" />
+      </div>
 
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -93,7 +97,8 @@ export default function Contact() {
         viewport={{ once: true }}
         className="text-lg max-w-xl mx-auto text-slate-600 dark:text-slate-300"
       >
-        I’m currently open to freelance opportunities, collaborations, or full-time roles. Let’s build something great together!
+        I’m currently open to freelance opportunities, collaborations, or full-time roles.<br />
+        Let’s build something great together!
       </motion.p>
 
       <motion.div
@@ -101,28 +106,59 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex justify-center gap-6"
+        className="flex flex-col sm:flex-row justify-center gap-6"
       >
         <a
-          href="mailto:ibrahimshuaibuisa7@gmail.com"
-          className="flex items-center gap-2 text-indigo-600 hover:underline"
+          href="mailto:shuaibuibrahim523@gmail.com"
+          className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/80 dark:bg-slate-800/80 border border-indigo-100 dark:border-slate-700 shadow hover:shadow-lg hover:bg-indigo-50 dark:hover:bg-indigo-900 transition group"
         >
-          <Mail className="w-5 h-5" /> ibrahimshuaibuisa7@gmail.com
+          <Mail className="w-5 h-5 text-indigo-600 group-hover:text-indigo-800 dark:text-indigo-400 dark:group-hover:text-indigo-300" />
+          <span className="font-medium text-slate-700 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-200">
+            shuaibuibrahim523@gmail.com
+          </span>
         </a>
         <a
           href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279/"
           target="_blank"
-          className="flex items-center gap-2 text-indigo-600 hover:underline"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/80 dark:bg-slate-800/80 border border-indigo-100 dark:border-slate-700 shadow hover:shadow-lg hover:bg-indigo-50 dark:hover:bg-indigo-900 transition group"
         >
-          <Linkedin className="w-5 h-5" /> LinkedIn
+          <Linkedin className="w-5 h-5 text-indigo-600 group-hover:text-indigo-800 dark:text-indigo-400 dark:group-hover:text-indigo-300" />
+          <span className="font-medium text-slate-700 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-200">
+            LinkedIn
+          </span>
         </a>
         <a
           href="https://github.com/ShuaibuPassionateProgrammer/"
           target="_blank"
-          className="flex items-center gap-2 text-indigo-600 hover:underline"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white/80 dark:bg-slate-800/80 border border-indigo-100 dark:border-slate-700 shadow hover:shadow-lg hover:bg-indigo-50 dark:hover:bg-indigo-900 transition group"
         >
-          <Github className="w-5 h-5" /> GitHub
+          <Github className="w-5 h-5 text-indigo-600 group-hover:text-indigo-800 dark:text-indigo-400 dark:group-hover:text-indigo-300" />
+          <span className="font-medium text-slate-700 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-200">
+            GitHub
+          </span>
         </a>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.6 }}
+        viewport={{ once: true }}
+        className="mt-8"
+      >
+        <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl shadow flex flex-col gap-4 items-center">
+          <div className="text-lg font-semibold text-indigo-700 dark:text-indigo-300 mb-2">
+            Prefer a direct message?
+          </div>
+          <a
+            href="mailto:shuaibuibrahim523@gmail.com"
+            className="inline-block px-6 py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition"
+          >
+            Send Email
+          </a>
+        </div>
       </motion.div>
     </section>
   );
