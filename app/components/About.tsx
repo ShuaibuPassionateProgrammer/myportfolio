@@ -127,14 +127,24 @@ export default function About() {
       >
         <h3 className="text-2xl font-semibold text-center mb-4">Achievements & Certifications</h3>
         <div className="grid md:grid-cols-2 gap-4 text-center">
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4">
-            <div className="text-indigo-600 font-semibold">Google Africa Developer Scholarship (GADS)</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">Graduate</div>
-          </div>
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4">
-            <div className="text-purple-600 font-semibold">Certified Flutter Developer</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">App Brewery</div>
-          </div>
+          <a
+            href="https://www.freecodecamp.org/certification/ShuaibuPassionateProgrammer/responsive-web-design"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600"
+          >
+            <div className="text-indigo-600 font-semibold">Responsive Web Design</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">freeCodeCamp Certification</div>
+          </a>
+          <a
+            href="https://www.freecodecamp.org/certification/ShuaibuPassionateProgrammer/javascript-algorithms-and-data-structures-v8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600"
+          >
+            <div className="text-purple-600 font-semibold">JavaScript Algorithms & Data Structures</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">freeCodeCamp Certification</div>
+          </a>
         </div>
       </motion.div>
     </motion.section>
