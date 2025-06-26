@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to My GitHub Profile! 👋
 
-## Getting Started
+I'm passionate about building modern web applications and exploring cutting-edge technologies. This profile showcases my journey as a developer and the projects I'm working on.
 
-First, run the development server:
+## 🚀 Featured Technologies
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, API Routes, Serverless Functions  
+- **Database**: PostgreSQL, MongoDB, Prisma ORM
+- **Deployment**: Vercel, AWS, Docker
+- **Tools**: Git, VS Code, Figma, Linear
+
+## 🛠️ Current Projects
+
+### Next.js Applications
+I'm actively developing several Next.js projects that leverage the latest features:
+- **App Router**: Utilizing the new App Directory for improved routing and layouts
+- **Server Components**: Building performant applications with React Server Components
+- **Edge Functions**: Implementing serverless functions at the edge for optimal performance
+- **Font Optimization**: Using `next/font` with [Geist](https://vercel.com/font) for beautiful typography
+
+## 📚 Learning Journey
+
+Currently diving deep into:
+- Advanced Next.js patterns and best practices
+- Full-stack development with modern frameworks
+- Performance optimization techniques
+- Accessibility and inclusive design
+- DevOps and deployment strategies
+
+## 🌟 Quick Start Guide
+
+Most of my Next.js projects can be run locally with these simple steps:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) to see the application in action!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Resources I Recommend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Next.js Learning Path**:
+- [Next.js Documentation](https://nextjs.org/docs) - Comprehensive guide to Next.js features
+- [Learn Next.js](https://nextjs.org/learn) - Interactive tutorial series
+- [Next.js GitHub Repository](https://github.com/vercel/next.js) - Source code and community discussions
 
-## Learn More
+**Deployment**:
+- [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js) - Seamless Next.js deployment
+- [Next.js Deployment Docs](https://nextjs.org/docs/app/building-your-application/deploying) - Deployment strategies and best practices
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Let's Connect
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I'm always interested in collaborating on interesting projects and discussing web development trends. Feel free to:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ⭐ Star repositories that interest you
+- 🐛 Open issues if you find bugs
+- 💡 Suggest improvements or new features
+- 🤝 Reach out for collaboration opportunities
 
-## Deploy on Vercel
+## 📊 GitHub Stats
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=dark)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Building the web, one commit at a time* ✨
