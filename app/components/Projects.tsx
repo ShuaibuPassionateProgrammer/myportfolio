@@ -62,7 +62,7 @@ const projects = [
 		tech: ["React Native", "JavaScript", "Weather API"],
 		category: "Mobile Development",
 		demo: "https://play.google.com/store/weather-app",
-		code: "https://github.com/ShuaibuPassionateProgrammer/weather-app",
+		code: "https://github.com/ShuaibuPassionateProgrammer/reactnative-weather-app",
 		featured: false,
 		stats: { stars: 28, users: "2K+" },
 	},
