@@ -1,5 +1,28 @@
 import { NextWebVitalsMetric } from 'next/app';
 
+// Type definitions for navigator extensions
+interface NavigatorWithConnection extends Navigator {
+  connection?: NetworkInformation;
+  mozConnection?: NetworkInformation;
+  webkitConnection?: NetworkInformation;
+  deviceMemory?: number;
+}
+
+interface NetworkInformation {
+  effectiveType: string;
+  saveData: boolean;
+  type?: string;
+}
+
+interface WindowWithGtag extends Window {
+  gtag?: (...args: unknown[]) => void;
+}
+
+interface PerformanceEventTiming extends PerformanceEntry {
+  processingStart: number;
+  startTime: number;
+}
+
 // Core Web Vitals tracking
 export function reportWebVitals(metric: NextWebVitalsMetric) {
   // Log to console in development
@@ -10,20 +33,13 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
   // Send to analytics in production
   if (process.env.NODE_ENV === 'production') {
     // Example: Send to Google Analytics 4
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', metric.name, {
+    if (typeof window !== 'undefined' && (window as unknown as WindowWithGtag).gtag) {
+      (window as unknown as WindowWithGtag).gtag?.('event', metric.name, {
         value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
         event_label: metric.id,
         non_interaction: true,
       });
     }
-
-    // Example: Send to custom analytics endpoint
-    // fetch('/api/analytics/web-vitals', {
-    //   method: 'POST',
-    //   body: JSON.stringify(metric),
-    //   headers: { 'Content-Type': 'application/json' },
-    // });
   }
 }
 
@@ -60,13 +76,14 @@ export function observePerformance() {
     firstInputObserver = new PerformanceObserver((list) => {
       const entries = list.getEntries();
       entries.forEach((entry) => {
-        const delay = entry.processingStart - entry.startTime;
+        const perfEntry = entry as PerformanceEventTiming;
+        const delay = perfEntry.processingStart - perfEntry.startTime;
         if (delay > 100) {
           console.warn('First Input Delay:', delay);
         }
       });
     });
-    firstInputObserver.observe({ type: 'first-input', buffered: true });
+    firstInputObserver.observe({ type: 'first-input', buffered: true } as unknown as PerformanceObserverInit);
   }
 
   return () => {
@@ -119,7 +136,8 @@ export const performanceUtils = {
   isLowEndDevice: () => {
     if (typeof navigator === 'undefined') return false;
     
-    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const nav = navigator as NavigatorWithConnection;
+    const connection = nav.connection || nav.mozConnection || nav.webkitConnection;
     
     return (
       navigator.hardwareConcurrency <= 4 ||
@@ -132,14 +150,12 @@ export const performanceUtils = {
   getDeviceInfo: () => {
     if (typeof navigator === 'undefined') return null;
     
-    interface NavigatorWithMemory extends Navigator {
-      deviceMemory?: number;
-    }
+    const nav = navigator as NavigatorWithConnection;
     
     return {
       hardwareConcurrency: navigator.hardwareConcurrency || 1,
-      deviceMemory: (navigator as NavigatorWithMemory).deviceMemory || 'unknown',
-      connection: navigator.connection || navigator.mozConnection || navigator.webkitConnection,
+      deviceMemory: nav.deviceMemory || 'unknown',
+      connection: nav.connection || nav.mozConnection || nav.webkitConnection,
     };
   },
 };

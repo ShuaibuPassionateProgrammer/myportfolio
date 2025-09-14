@@ -11,6 +11,14 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@next/next/no-page-custom-font": "off",
+    },
+  },
+  {
+    ignores: ["**/*.config.js", "**/*.config.mjs", "node_modules/**/*", ".next/**/*"],
+  },
 ];
 
 export default eslintConfig;

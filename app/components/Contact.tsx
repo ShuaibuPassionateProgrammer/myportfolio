@@ -51,10 +51,10 @@ export default function Contact() {
         className="text-center mb-12"
       >
         <h2 className="text-4xl sm:text-5xl font-heading font-bold text-slate-900 dark:text-white mb-4">
-          Let's Work Together
+          Let&apos;s Work Together
         </h2>
         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-          Ready to bring your vision to life? I'm currently available for freelance projects, 
+          Ready to bring your vision to life? I&apos;m currently available for freelance projects, 
           full-time opportunities, and strategic collaborations.
         </p>
       </motion.div>
@@ -74,7 +74,7 @@ export default function Contact() {
             </h3>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
               I specialize in building scalable web applications and delivering exceptional user experiences. 
-              Let's discuss how I can contribute to your team's success.
+              Let&apos;s discuss how I can contribute to your team&apos;s success.
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
               <Linkedin className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               <div>
                 <p className="font-medium text-slate-900 dark:text-white">Connect on LinkedIn</p>
-                <p className="text-sm text-slate-600 dark:text-slate-400">Let's build your network</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400">Let&apos;s build your network</p>
               </div>
             </motion.a>
 
@@ -151,7 +151,7 @@ export default function Contact() {
                 Thank You!
               </h3>
               <p className="text-green-700 dark:text-green-300">
-                Your message has been received. I'll get back to you within 24-48 hours.
+                Your message has been received. I&apos;ll get back to you within 24-48 hours.
               </p>
             </motion.div>
           ) : (
@@ -273,7 +273,7 @@ export default function Contact() {
                       <option value="10k-25k">$10,000 - $25,000</option>
                       <option value="25k-50k">$25,000 - $50,000</option>
                       <option value="50k+">$50,000+</option>
-                      <option value="discuss">Let's discuss</option>
+                      <option value="discuss">Let&apos;s discuss</option>
                     </select>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Tell me about your project, goals, and what you're looking for in a developer... Be as detailed as possible."
+                    placeholder="Tell me about your project, goals, and what you&apos;re looking for in a developer... Be as detailed as possible."
                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"
                   />
                 </div>

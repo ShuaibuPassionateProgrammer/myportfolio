@@ -96,8 +96,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-5xl sm:text-7xl font-extrabold font-heading leading-tight tracking-tight text-slate-900 dark:text-white"
         >
-          Hi, I&apos;m{" "}
-          <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
+          <span className="sr-only">Hi, I&apos;m</span>
+          <span aria-hidden="true">Hi, I&apos;m{" "}</span>
+          <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent" aria-label="Ibrahim Shuaibu Isa">
             Ibrahim Shuaibu Isa
           </span>
         </motion.h1>
@@ -269,8 +270,8 @@ export default function Hero() {
         >
           <p className="text-gray-500 dark:text-gray-400">
             Have a project in mind?{" "}
-            <a href="#contact" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors duration-300">
-              Let's discuss it
+          <a href="#contact" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors duration-300">
+              Let&apos;s discuss it
             </a>
           </p>
         </motion.div>
@@ -281,18 +282,42 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
           className="flex justify-center gap-6 pt-8"
+          role="navigation"
+          aria-label="Social media links"
         >
-          <a href="https://github.com/ShuaibuPassionateProgrammer" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
-            <Github className="w-6 h-6" />
+          <a 
+            href="https://github.com/ShuaibuPassionateProgrammer" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+            aria-label="Visit my GitHub profile"
+          >
+            <Github className="w-6 h-6" aria-hidden="true" />
           </a>
-          <a href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
-            <Linkedin className="w-6 h-6" />
+          <a 
+            href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+            aria-label="Connect with me on LinkedIn"
+          >
+            <Linkedin className="w-6 h-6" aria-hidden="true" />
           </a>
-          <a href="https://x.com/shuaibu92685472" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
-            <Twitter className="w-6 h-6" />
+          <a 
+            href="https://x.com/shuaibu92685472" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+            aria-label="Follow me on Twitter"
+          >
+            <Twitter className="w-6 h-6" aria-hidden="true" />
           </a>
-          <a href="mailto:shuaibuibrahim523@gmail.com" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
-            <Mail className="w-6 h-6" />
+          <a 
+            href="mailto:shuaibuibrahim523@gmail.com" 
+            className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
+            aria-label="Send me an email"
+          >
+            <Mail className="w-6 h-6" aria-hidden="true" />
           </a>
         </motion.div>
 
