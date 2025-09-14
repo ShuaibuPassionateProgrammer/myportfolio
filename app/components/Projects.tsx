@@ -143,13 +143,16 @@ export default function Projects() {
 							<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 								{/* Project Image */}
 								<div className="relative overflow-hidden">
+									<div className="relative w-full h-48">
 									<Image
 										src={project.image}
 										alt={project.title}
-										width={640}
-										height={360}
-										className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+										fill
+										className="object-cover group-hover:scale-110 transition-transform duration-500"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										loading="lazy"
 									/>
+								</div>
 									<div className="absolute top-4 left-4">
 										<span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">
 											{project.category}
@@ -183,21 +186,21 @@ export default function Projects() {
 										</ul>
 										<div className="mt-auto flex gap-4">
 											<a
-												href={project.demo}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="flex items-center gap-1 text-sm text-indigo-600 hover:underline"
-											>
-												<ExternalLink className="w-4 h-4" /> Live Demo
-											</a>
-											<a
-												href={project.code}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-300 hover:underline"
-											>
-												<Github className="w-4 h-4" /> Source Code
-											</a>
+															href={project.demo}
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex items-center gap-1 text-sm text-indigo-600 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+														>
+															<ExternalLink className="w-4 h-4" aria-hidden="true" /> Live Demo
+														</a>
+														<a
+															href={project.code}
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-300 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+														>
+															<Github className="w-4 h-4" aria-hidden="true" /> Source Code
+														</a>
 										</div>
 									</div>
 									<div className="mt-4 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
@@ -265,13 +268,16 @@ export default function Projects() {
 							<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 								{/* Project Image */}
 								<div className="relative overflow-hidden">
+									<div className="relative w-full h-48">
 									<Image
 										src={project.image}
 										alt={project.title}
-										width={640}
-										height={360}
-										className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+										fill
+										className="object-cover group-hover:scale-110 transition-transform duration-500"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										loading="lazy"
 									/>
+								</div>
 									<div className="absolute top-4 left-4">
 										<span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">
 											{project.category}
@@ -304,21 +310,21 @@ export default function Projects() {
 										</ul>
 										<div className="mt-auto flex gap-4">
 											<a
-												href={project.demo}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="flex items-center gap-1 text-sm text-indigo-600 hover:underline"
-											>
-												<ExternalLink className="w-4 h-4" /> Live Demo
-											</a>
-											<a
-												href={project.code}
-												target="_blank"
-												rel="noopener noreferrer"
-												className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-300 hover:underline"
-											>
-												<Github className="w-4 h-4" /> Source Code
-											</a>
+															href={project.demo}
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex items-center gap-1 text-sm text-indigo-600 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+														>
+															<ExternalLink className="w-4 h-4" aria-hidden="true" /> Live Demo
+														</a>
+														<a
+															href={project.code}
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-300 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+														>
+															<Github className="w-4 h-4" aria-hidden="true" /> Source Code
+														</a>
 										</div>
 									</div>
 									<div className="mt-4 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">

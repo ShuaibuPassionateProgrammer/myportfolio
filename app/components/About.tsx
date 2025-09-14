@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Award, Users, Code2, Lightbulb } from "lucide-react";
-import Image from "next/image";
+import OptimizedImage from "./OptimizedImage";
 
 export default function About() {
   const highlights = [
@@ -40,13 +40,14 @@ export default function About() {
       {/* Profile Image Card */}
       <div className="flex justify-center">
         <div className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg rounded-full p-2 shadow-lg border-4 border-indigo-100 dark:border-slate-800">
-          <Image
+          <OptimizedImage
             src="/img/mine.png"
             alt="Ibrahim Shuaibu Isa"
             width={144}
             height={144}
             className="rounded-full object-cover"
             priority
+            sizes="144px"
           />
         </div>
       </div>
@@ -109,7 +110,7 @@ export default function About() {
               transition={{ delay: 0.1 * index, duration: 0.5 }}
               className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 flex flex-col items-center"
             >
-              <div className="text-indigo-600 mb-3">{highlight.icon}</div>
+              <div className="text-indigo-600 mb-3" aria-hidden="true">{highlight.icon}</div>
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">{highlight.title}</h3>
               <p className="text-sm text-slate-600 dark:text-slate-400 text-center">{highlight.description}</p>
             </motion.div>

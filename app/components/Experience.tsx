@@ -1,24 +1,23 @@
-/* File: app/components/Experience.tsx */
 "use client";
 
 import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "TechNova Solutions",
-    period: "Jan 2023 – Present",
+    role: "Web Development Intern",
+    company: "CodeAlpha",
+    period: "15th September – 15th October 2025",
     description:
-      "Led development of scalable UI components using React and Tailwind CSS. Improved page load speed by 30% and collaborated closely with UX designers to implement modern design systems.",
-    tech: ["React", "Next.js", "Tailwind", "TypeScript"],
+      "Gaining hands-on experience in modern web development practices, working on real-world projects and contributing to the development team with cutting-edge technologies.",
+    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    role: "Web Development Intern",
-    company: "BrightApps Inc.",
-    period: "Jun 2022 – Dec 2022",
+    role: "Frontend Engineer Intern",
+    company: "Flexisaf",
+    period: "September – December 2025",
     description:
-      "Built responsive landing pages and internal dashboards. Assisted in refactoring legacy code and integrating REST APIs.",
-    tech: ["HTML", "CSS", "JavaScript", "Git"],
+      "Developing responsive user interfaces and implementing interactive features for enterprise applications while collaborating with cross-functional teams to deliver high-quality software solutions.",
+    tech: ["React", "JavaScript", "CSS", "Git", "Agile"],
   },
 ];
 
