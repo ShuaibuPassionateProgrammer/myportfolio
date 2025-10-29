@@ -7,13 +7,13 @@ import { ExternalLink, Github, Star, Users, Code } from "lucide-react";
 
 const projects = [
 	{
-		title: "MyPortfolio",
+		title: "CartoCraft",
 		description:
 			"Personal portfolio website built with Next.js and Tailwind CSS, featuring a modern design, dark mode, and seamless mobile responsiveness.",
 		image: "/projects/portfolio.jpg",
 		tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 		category: "Web Development",
-		demo: "https://myportfolio.vercel.app",
+		demo: "",
 		code: "https://github.com/ShuaibuPassionateProgrammer/myportfolio",
 		featured: true,
 		stats: { stars: 24, users: "500+" },
