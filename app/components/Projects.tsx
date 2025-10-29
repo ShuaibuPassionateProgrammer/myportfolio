@@ -9,12 +9,12 @@ const projects = [
 	{
 		title: "CartoCraft",
 		description:
-			"Personal portfolio website built with Next.js and Tailwind CSS, featuring a modern design, dark mode, and seamless mobile responsiveness.",
-		image: "/projects/portfolio.jpg",
+			"CartoCraft website built with Next.js and Tailwind CSS, featuring a modern design, dark mode, and seamless mobile responsiveness.",
+		image: "/projects/cartocraft.png",
 		tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 		category: "Web Development",
 		demo: "",
-		code: "https://github.com/ShuaibuPassionateProgrammer/myportfolio",
+		code: "https://carto-craft.vercel.app",
 		featured: true,
 		stats: { stars: 24, users: "500+" },
 	},
