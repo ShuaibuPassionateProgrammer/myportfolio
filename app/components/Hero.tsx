@@ -4,6 +4,18 @@ import { ArrowDownToLine, Download, Code, Smartphone, Globe, Github, Linkedin, T
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+// Pre-generate particle data to ensure consistent server/client rendering
+const PARTICLE_COUNT = 20;
+const particleData = Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
+  id: i,
+  left: Math.random() * 100,
+  top: Math.random() * 100,
+  duration: 4 + Math.random() * 2,
+  delay: Math.random() * 3,
+  x: (Math.random() - 0.5) * 100,
+  y: (Math.random() - 0.5) * 100,
+}));
+
 const TypewriterText = ({ texts, delay = 100 }: { texts: string[]; delay?: number }) => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,6 +50,12 @@ const TypewriterText = ({ texts, delay = 100 }: { texts: string[]; delay?: numbe
 };
 
 export default function Hero() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <section className="relative flex flex-col items-center justify-center text-center pt-20 pb-16 min-h-screen overflow-hidden">
       {/* Sophisticated animated background */}
@@ -47,32 +65,34 @@ export default function Hero() {
         <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 rounded-full opacity-15 blur-3xl animate-pulse delay-1000" />
         <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-full opacity-10 blur-3xl animate-pulse delay-2000" />
         
-        {/* Floating particles */}
-        <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-indigo-400 dark:bg-indigo-300 rounded-full"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ 
-                opacity: [0, 1, 0], 
-                scale: [0, 1, 0],
-                x: [0, (Math.random() - 0.5) * 100],
-                y: [0, (Math.random() - 0.5) * 100]
-              }}
-              transition={{ 
-                duration: 4 + Math.random() * 2,
-                delay: Math.random() * 3,
-                repeat: Infinity,
-                repeatType: "loop"
-              }}
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`
-              }}
-            />
-          ))}
-        </div>
+        {/* Floating particles - only rendered on client */}
+        {isClient && (
+          <div className="absolute inset-0">
+            {particleData.map((particle) => (
+              <motion.div
+                key={particle.id}
+                className="absolute w-1 h-1 bg-indigo-400 dark:bg-indigo-300 rounded-full"
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ 
+                  opacity: [0, 1, 0], 
+                  scale: [0, 1, 0],
+                  x: [0, particle.x],
+                  y: [0, particle.y]
+                }}
+                transition={{ 
+                  duration: particle.duration,
+                  delay: particle.delay,
+                  repeat: Infinity,
+                  repeatType: "loop"
+                }}
+                style={{
+                  left: `${particle.left}%`,
+                  top: `${particle.top}%`
+                }}
+              />
+            ))}
+          </div>
+        )}
       </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -362,8 +382,6 @@ export default function Hero() {
             <div className="h-1 w-16 mx-auto mt-3 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </motion.div>
         </motion.div>
-
-
       </motion.div>
     </section>
   );
