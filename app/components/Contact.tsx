@@ -82,7 +82,7 @@ export default function Contact() {
             <motion.a
               href="mailto:shuaibuibrahim523@gmail.com"
               whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+              className="flex items-center gap-4 p-4 rounded-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group border border-slate-200 dark:border-slate-700 shadow-lg"
             >
               <Mail className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               <div>
@@ -96,7 +96,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+              className="flex items-center gap-4 p-4 rounded-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group border border-slate-200 dark:border-slate-700 shadow-lg"
             >
               <Linkedin className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               <div>
@@ -110,7 +110,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+              className="flex items-center gap-4 p-4 rounded-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200 group border border-slate-200 dark:border-slate-700 shadow-lg"
             >
               <Github className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
               <div>
@@ -120,7 +120,7 @@ export default function Contact() {
             </motion.a>
           </div>
 
-          <div className="p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700">
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 border border-slate-200 dark:border-slate-700 shadow-lg">
             <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Response Time</h4>
             <p className="text-sm text-slate-600 dark:text-slate-300">
               I typically respond within 24-48 hours for new opportunities and project inquiries.
@@ -140,7 +140,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="p-8 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-center"
+              className="p-8 rounded-2xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-center shadow-lg"
             >
               <div className="w-16 h-16 bg-green-100 dark:bg-green-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +155,7 @@ export default function Contact() {
               </p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">

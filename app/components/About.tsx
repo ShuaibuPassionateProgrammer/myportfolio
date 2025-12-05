@@ -39,7 +39,7 @@ export default function About() {
     >
       {/* Profile Image Card */}
       <div className="flex justify-center">
-        <div className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg rounded-full p-2 shadow-lg border-4 border-indigo-100 dark:border-slate-800">
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-full p-2 shadow-xl border-4 border-indigo-100 dark:border-slate-800">
           <OptimizedImage
             src="/img/mine.png"
             alt="Ibrahim Shuaibu Isa"
@@ -108,7 +108,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * index, duration: 0.5 }}
-              className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 flex flex-col items-center"
+              className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 flex flex-col items-center"
             >
               <div className="text-indigo-600 mb-3" aria-hidden="true">{highlight.icon}</div>
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">{highlight.title}</h3>
@@ -124,7 +124,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.6, duration: 0.6 }}
-        className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl shadow flex flex-col gap-4"
+        className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl shadow-xl flex flex-col gap-4 border border-slate-200 dark:border-slate-700"
       >
         <h3 className="text-2xl font-semibold text-center mb-4">Achievements & Certifications</h3>
         <div className="grid md:grid-cols-2 gap-4 text-center">
@@ -132,7 +132,7 @@ export default function About() {
             href="https://www.freecodecamp.org/certification/ShuaibuPassionateProgrammer/responsive-web-design"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600 border border-slate-200 dark:border-slate-700"
           >
             <div className="text-indigo-600 font-semibold">Responsive Web Design</div>
             <div className="text-sm text-slate-600 dark:text-slate-400">freeCodeCamp Certification</div>
@@ -141,7 +141,7 @@ export default function About() {
             href="https://www.freecodecamp.org/certification/ShuaibuPassionateProgrammer/javascript-algorithms-and-data-structures-v8"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600 border border-slate-200 dark:border-slate-700"
           >
             <div className="text-purple-600 font-semibold">JavaScript Algorithms & Data Structures</div>
             <div className="text-sm text-slate-600 dark:text-slate-400">freeCodeCamp Certification</div>
@@ -151,40 +151,3 @@ export default function About() {
     </motion.section>
   );
 }
-
-// "use client";
-
-// import { motion } from "framer-motion";
-
-// export default function About() {
-//   return (
-//     <section id="about" className="max-w-3xl mx-auto text-center space-y-6">
-//       <motion.h2
-//         initial={{ opacity: 0, y: 10 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         viewport={{ once: true }}
-//         transition={{ duration: 0.6 }}
-//         className="text-3xl sm:text-4xl font-heading font-semibold"
-//       >
-//         About Me
-//       </motion.h2>
-
-//       <motion.p
-//         initial={{ opacity: 0, y: 10 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         viewport={{ once: true }}
-//         transition={{ delay: 0.2, duration: 0.6 }}
-//         className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
-//       >
-//         I&apos;m a <strong className="text-indigo-600">frontend developer</strong> with a passion for
-//         crafting user-centric, performant, and accessible web experiences. I enjoy working with
-//         modern frameworks like <strong>React</strong> and <strong>Next.js</strong>, and I love
-//         building beautiful UIs with <strong>Tailwind CSS</strong>.
-//         <br /><br />
-//         Whether it&rsquo;s optimizing performance, creating reusable components, or collaborating in teams,
-//         I&#39;m always learning and pushing myself. When I&rsquo;m not coding, you&rsquo;ll find me exploring coffee
-//         shops or sketching interface ideas.
-//       </motion.p>
-//     </section>
-//   );
-// }

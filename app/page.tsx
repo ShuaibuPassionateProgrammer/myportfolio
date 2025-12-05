@@ -25,7 +25,7 @@ export default function Home() {
 
 	return (
 		<main className="max-w-5xl mx-auto px-4 pt-6 pb-10 space-y-10 sm:space-y-14">
-			<header className="sticky top-4 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 rounded-2xl shadow-xl mb-4 border border-slate-200 dark:border-slate-800 transition-all">
+			<header className="sticky top-4 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 rounded-2xl shadow-xl mb-4 border border-slate-200 dark:border-slate-800 transition-all">
 				{/* Logo */}
 				<a
 					href="#hero"

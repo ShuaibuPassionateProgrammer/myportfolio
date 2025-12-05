@@ -78,6 +78,79 @@ const projects = [
 		featured: false,
 		stats: { stars: 15, users: "400+" },
 	},
+	// New projects added below
+	{
+		title: "Advanced Role Based Flutter Firebase",
+		description:
+			"A Flutter app utilizing Firebase for role-based authentication, providing dynamic admin and user access control.",
+		image: "/projects/taskify.jpg",
+		tech: ["Flutter", "Dart", "Firebase", "Role-Based Auth"],
+		category: "Mobile Development",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/advanced_role_based_flutter_firebase",
+		featured: false,
+		stats: { stars: 22, users: "300+" },
+	},
+	{
+		title: "X Clone RN TS",
+		description:
+			"A modern React Native + TypeScript clone of X (Twitter), featuring a responsive UI and type-safe state management.",
+		image: "/projects/twitter_clone.jpg",
+		tech: ["React Native", "TypeScript", "Redux", "REST API"],
+		category: "Mobile Development",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/x-clone-rn-ts",
+		featured: false,
+		stats: { stars: 38, users: "750+" },
+	},
+	{
+		title: "LinkedIn Clone TS",
+		description:
+			"A LinkedIn clone built with Next.js and TypeScript, offering optimized fonts, fast refresh, and seamless Vercel deployment.",
+		image: "/projects/linkedin_clone.jpg",
+		tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+		category: "Web Development",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/linkedin-clone-ts",
+		featured: false,
+		stats: { stars: 45, users: "1.2K+" },
+	},
+	{
+		title: "MessageFlow",
+		description:
+			"A real-time MERN stack chat application with JWT authentication, Zustand for state management, TailwindCSS for styling, Cloudinary for image uploads, and robust error handling. Production-ready.",
+		image: "/projects/devconnect.jpg",
+		tech: ["MongoDB", "Express.js", "React", "Node.js", "Socket.IO"],
+		category: "Full-Stack",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/MessageFlow",
+		featured: true,
+		stats: { stars: 67, users: "2.1K+" },
+	},
+	{
+		title: "Snapchat Clone TS",
+		description:
+			"A full-stack Snapchat clone built with Next.js, TypeScript, Tailwind CSS, and ShadCN UI, featuring webcam capture, snap previews, and real-time chat through MongoDB.",
+		image: "/projects/snapchat_clone.jpg",
+		tech: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "WebRTC"],
+		category: "Full-Stack",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/snapchat-clone-ts",
+		featured: true,
+		stats: { stars: 52, users: "1.5K+" },
+	},
+	{
+		title: "WhatsApp Clone TS",
+		description:
+			"A real-time WhatsApp clone built with TypeScript, React, and Socket.IO, featuring modern UI, media sharing, and secure chat functionality.",
+		image: "/projects/whatsapp_clone.jpg",
+		tech: ["React", "TypeScript", "Socket.IO", "Node.js", "Express.js"],
+		category: "Full-Stack",
+		demo: "#",
+		code: "https://github.com/ShuaibuPassionateProgrammer/whatsapp-clone-ts",
+		featured: true,
+		stats: { stars: 58, users: "1.8K+" },
+	},
 ];
 
 const categories = [
@@ -129,7 +202,7 @@ export default function Projects() {
 								key={project.title + "-featured"}
 								className="group relative"
 							>
-								<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
+								<div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 									{/* Project Image */}
 									<div className="relative overflow-hidden">
 										<div className="relative w-full h-48">
@@ -159,7 +232,7 @@ export default function Projects() {
 												{project.tech.map((tech) => (
 													<li
 														key={project.title + "-featured-tech-" + tech}
-														className="bg-indigo-100 dark:bg-indigo-900 dark:text-indigo-300 px-2 py-1 rounded-md"
+														className="bg-indigo-100/80 dark:bg-indigo-900/80 dark:text-indigo-300 px-2 py-1 rounded-md"
 													>
 														{tech}
 													</li>
@@ -218,7 +291,7 @@ export default function Projects() {
 								className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
 									selectedCategory === category
 										? "bg-indigo-600 text-white"
-										: "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
+										: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
 								}`}
 								type="button"
 								aria-pressed={selectedCategory === category}
@@ -234,7 +307,7 @@ export default function Projects() {
 								key={project.title + "-filtered"}
 								className="group relative"
 							>
-								<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
+								<div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 									{/* Project Image */}
 									<div className="relative overflow-hidden">
 										<div className="relative w-full h-48">
@@ -264,7 +337,7 @@ export default function Projects() {
 												{project.tech.map((tech) => (
 													<li
 														key={project.title + "-filtered-tech-" + tech}
-														className="bg-indigo-100 dark:bg-indigo-900 dark:text-indigo-300 px-2 py-1 rounded-md"
+														className="bg-indigo-100/80 dark:bg-indigo-900/80 dark:text-indigo-300 px-2 py-1 rounded-md"
 													>
 														{tech}
 													</li>
@@ -355,7 +428,7 @@ export default function Projects() {
 							viewport={{ once: true }}
 							className="group relative"
 						>
-							<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
+							<div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 								{/* Project Image */}
 								<div className="relative overflow-hidden">
 									<div className="relative w-full h-48">
@@ -392,7 +465,7 @@ export default function Projects() {
 											{project.tech.map((tech) => (
 												<li
 													key={project.title + "-featured-tech-" + tech}
-													className="bg-indigo-100 dark:bg-indigo-900 dark:text-indigo-300 px-2 py-1 rounded-md"
+													className="bg-indigo-100/80 dark:bg-indigo-900/80 dark:text-indigo-300 px-2 py-1 rounded-md"
 												>
 													{tech}
 												</li>
@@ -458,7 +531,7 @@ export default function Projects() {
 							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
 								selectedCategory === category
 									? "bg-indigo-600 text-white"
-									: "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
+									: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
 							}`}
 							type="button"
 							aria-pressed={selectedCategory === category}
@@ -479,7 +552,7 @@ export default function Projects() {
 							viewport={{ once: true }}
 							className="group relative"
 						>
-							<div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
+							<div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 								{/* Project Image */}
 								<div className="relative overflow-hidden">
 									<div className="relative w-full h-48">
@@ -516,7 +589,7 @@ export default function Projects() {
 											{project.tech.map((tech) => (
 												<li
 													key={project.title + "-filtered-tech-" + tech}
-													className="bg-indigo-100 dark:bg-indigo-900 dark:text-indigo-300 px-2 py-1 rounded-md"
+													className="bg-indigo-100/80 dark:bg-indigo-900/80 dark:text-indigo-300 px-2 py-1 rounded-md"
 												>
 													{tech}
 												</li>

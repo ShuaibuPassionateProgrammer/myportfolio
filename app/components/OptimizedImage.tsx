@@ -54,7 +54,7 @@ export default function OptimizedImage({
         )}`}
       />
       {isLoading && (
-        <div className="absolute inset-0 bg-gray-100 animate-pulse" />
+        <div className="absolute inset-0 bg-gray-100 animate-pulse rounded-xl" />
       )}
     </div>
   );

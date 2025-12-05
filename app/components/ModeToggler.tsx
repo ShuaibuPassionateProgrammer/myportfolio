@@ -20,7 +20,7 @@ export default function ModeToggler() {
     if (!mounted) {
         return (
             <button
-                className="relative flex items-center justify-center rounded-full p-2 w-10 h-10 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 transition-colors duration-200 cursor-pointer"
+                className="relative flex items-center justify-center rounded-full p-2 w-10 h-10 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur transition-colors duration-200 cursor-pointer shadow-lg"
                 aria-label="Toggle theme"
                 disabled
                 type="button"
@@ -33,7 +33,7 @@ export default function ModeToggler() {
     return (
         <button
             onClick={handleToggle}
-            className="relative flex items-center justify-center rounded-full p-2 w-10 h-10 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 transition-colors duration-200 hover:bg-indigo-100 dark:hover:bg-indigo-900 cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="relative flex items-center justify-center rounded-full p-2 w-10 h-10 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 backdrop-blur transition-colors duration-200 hover:bg-indigo-100 dark:hover:bg-indigo-900 cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 shadow-lg"
             aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
             type="button"
         >
