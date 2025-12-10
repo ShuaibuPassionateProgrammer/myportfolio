@@ -43,11 +43,12 @@ export default function About() {
           <OptimizedImage
             src="/img/mine.png"
             alt="Ibrahim Shuaibu Isa"
-            width={144}
-            height={144}
+            width={120}
+            height={120}
             className="rounded-full object-cover"
             priority
-            sizes="144px"
+            sizes="120px"
+            quality={75}
           />
         </div>
       </div>

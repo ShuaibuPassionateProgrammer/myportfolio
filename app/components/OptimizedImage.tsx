@@ -30,6 +30,10 @@ export default function OptimizedImage({
     setIsLoading(false);
   };
 
+  // Use consistent quality for SSR and client-side rendering to prevent hydration errors
+  // Quality will be adjusted via responsive image sizes instead of conditional logic
+  const adjustedQuality = quality;
+
   return (
     <div className={`relative ${fill ? 'w-full h-full' : ''} ${className}`}>
       <Image
@@ -39,14 +43,17 @@ export default function OptimizedImage({
         height={height}
         fill={fill}
         sizes={sizes}
-        quality={quality}
+        quality={adjustedQuality}
         priority={priority}
         onLoad={handleLoad}
         onError={handleLoad}
+        loading={priority ? 'eager' : 'lazy'}
         className={`
           ${isLoading ? 'blur-sm' : 'blur-0'}
           transition-all duration-300 ease-in-out
           ${fill ? 'object-cover' : 'object-contain'}
+          ${priority ? '' : 'opacity-0 transition-opacity duration-300'}
+          ${!isLoading && !priority ? 'opacity-100' : ''}
         `}
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${btoa(

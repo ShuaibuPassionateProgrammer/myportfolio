@@ -57,7 +57,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center pt-20 pb-16 min-h-screen overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center text-center pt-16 pb-12 min-h-[calc(100vh-4rem)] overflow-hidden">
       {/* Sophisticated animated background */}
       <div className="absolute inset-0">
         {/* Primary gradient orbs */}
@@ -98,13 +98,13 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="w-full max-w-4xl mx-auto bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-3xl shadow-2xl px-6 py-12 sm:py-16 flex flex-col items-center border border-white/30 dark:border-slate-700/50"
+        className="w-full max-w-4xl mx-auto bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl px-4 sm:px-6 py-8 sm:py-12 md:py-16 flex flex-col items-center border border-white/30 dark:border-slate-700/50"
       >
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl sm:text-7xl font-extrabold font-heading leading-tight tracking-tight text-slate-900 dark:text-white"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading leading-tight tracking-tight text-slate-900 dark:text-white"
         >
           <span className="sr-only">Hi, I&apos;m</span>
           <span aria-hidden="true">Hi, I&apos;m{" "}</span>
@@ -123,7 +123,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 text-2xl sm:text-3xl font-semibold text-slate-700 dark:text-slate-200"
+          className="mt-4 sm:mt-6 text-xl sm:text-2xl md:text-3xl font-semibold text-slate-700 dark:text-slate-200"
         >
           <TypewriterText texts={[
             "Full-Stack Software Developer",
@@ -136,7 +136,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto text-slate-600 dark:text-slate-300 leading-relaxed"
+          className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl max-w-2xl mx-auto text-slate-600 dark:text-slate-300 leading-relaxed"
         >
           With <strong>5+ years of experience</strong>, I craft scalable web and mobile applications
           using modern technologies. Passionate about clean architecture, intuitive design,
@@ -148,7 +148,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-16 max-w-5xl mx-auto"
+          className="mt-12 sm:mt-16 max-w-5xl mx-auto"
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -164,16 +164,16 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {/* Frontend Card */}
             <motion.div
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-indigo-500/50 dark:hover:border-indigo-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Code className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Code className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Frontend Excellence</h4>
                 <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
@@ -192,12 +192,12 @@ export default function Hero() {
             {/* Mobile Card */}
             <motion.div
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-500/50 dark:hover:border-purple-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-500/50 dark:hover:border-purple-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 dark:from-purple-400 dark:to-purple-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Smartphone className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-500 to-purple-600 dark:from-purple-400 dark:to-purple-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Smartphone className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Mobile Innovation</h4>
                 <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
@@ -216,12 +216,12 @@ export default function Hero() {
             {/* Backend Card */}
             <motion.div
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Globe className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Globe className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Backend Power</h4>
                 <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
@@ -244,13 +244,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mt-12 sm:mt-16"
         >
           <motion.a
             href="#projects"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+            className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-lg sm:rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <ArrowDownToLine className="w-5 h-5 mr-2 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
@@ -263,7 +263,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 overflow-hidden"
+            className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg sm:rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 overflow-hidden"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <Download className="w-5 h-5 mr-2 relative z-10 group-hover:translate-y-0.5 transition-transform duration-300" />
@@ -291,7 +291,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="flex justify-center gap-6 pt-8"
+          className="flex justify-center gap-4 sm:gap-6 pt-6 sm:pt-8"
           role="navigation"
           aria-label="Social media links"
         >
@@ -336,13 +336,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto"
+          className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 max-w-lg mx-auto"
         >
           <motion.div 
             whileHover={{ scale: 1.05 }}
             className="text-center group cursor-pointer"
           >
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 mb-3 tracking-tight">
+            <div className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 mb-3 tracking-tight">
               5+
             </div>
             <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1 uppercase tracking-wider">Years</div>
@@ -353,7 +353,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             className="text-center group cursor-pointer"
           >
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 mb-3 tracking-tight">
+            <div className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 mb-3 tracking-tight">
               50+
             </div>
             <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1 uppercase tracking-wider">Projects</div>
@@ -364,7 +364,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             className="text-center group cursor-pointer"
           >
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600 dark:from-pink-400 dark:to-rose-400 mb-3 tracking-tight">
+            <div className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600 dark:from-pink-400 dark:to-rose-400 mb-3 tracking-tight">
               15+
             </div>
             <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1 uppercase tracking-wider">Technologies</div>

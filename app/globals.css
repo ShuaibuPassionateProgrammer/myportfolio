@@ -133,4 +133,55 @@
       transform: translateY(0);
     }
   }
+  
+  /* Additional responsive utilities for better mobile-first approach */
+  @media (max-width: 375px) {
+    .text-responsive-lg {
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.6;
+    }
+    
+    .text-responsive-xl {
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.5;
+    }
+    
+    .p-responsive {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .gap-responsive {
+      gap: 0.75rem;
+    }
+  }
+  
+  @media (min-width: 414px) {
+    .text-responsive-lg {
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.6;
+    }
+    
+    .text-responsive-xl {
+      font-size: 1.5rem; /* 24px */
+      line-height: 1.4;
+    }
+  }
+  
+  /* Better touch targets for mobile */
+  @media (max-width: 768px) {
+    .touch-target {
+      min-height: 48px;
+      min-width: 48px;
+      padding: 12px;
+    }
+    
+    .mobile-padding {
+      padding: 0.75rem;
+    }
+    
+    .mobile-margin {
+      margin: 0.75rem 0;
+    }
+  }
 }

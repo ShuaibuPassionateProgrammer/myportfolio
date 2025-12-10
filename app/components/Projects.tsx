@@ -19,6 +19,18 @@ const projects = [
 		stats: { stars: 24, users: "500+" },
 	},
 	{
+		title: "ReactMind",
+		description:
+			"A fun & responsive quiz app crafted with React, TypeScript, and Tailwind CSS, featuring engaging UI, smooth animations, and an intuitive user experience.",
+		image: "/projects/reactmind.png",
+		tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+		category: "Web Development",
+		demo: "http://reactmind.netlify.app",
+		code: "https://github.com/ShuaibuPassionateProgrammer/reactmind",
+		featured: true,
+		stats: { stars: 30, users: "600+" },
+	},
+	{
 		title: "Taskify",
 		description:
 			"Cross-platform productivity app built with Flutter and Firebase, enabling real-time collaboration, project management, and offline access.",
@@ -288,11 +300,10 @@ export default function Projects() {
 							<button
 								key={category}
 								onClick={() => setSelectedCategory(category)}
-								className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-									selectedCategory === category
+								className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
 										? "bg-indigo-600 text-white"
 										: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
-								}`}
+									}`}
 								type="button"
 								aria-pressed={selectedCategory === category}
 							>
@@ -387,7 +398,7 @@ export default function Projects() {
 	}
 
 	return (
-		<section id="projects" className="space-y-16">
+		<section id="projects" className="space-y-12 sm:space-y-16">
 			<motion.div
 				initial={{ opacity: 0, y: 10 }}
 				whileInView={{ opacity: 1, y: 0 }}
@@ -395,10 +406,10 @@ export default function Projects() {
 				viewport={{ once: true }}
 				className="text-center space-y-4"
 			>
-				<h2 className="text-4xl sm:text-5xl font-heading font-semibold">
+				<h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold">
 					Featured Projects
 				</h2>
-				<p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+				<p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
 					Showcasing my best work across web development, mobile apps, and
 					full-stack solutions. Each project demonstrates different aspects of my
 					technical expertise.
@@ -418,7 +429,7 @@ export default function Projects() {
 					Featured Work
 				</motion.h3>
 
-				<div className="grid lg:grid-cols-3 gap-8">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 					{featuredProjects.map((project) => (
 						<motion.div
 							key={project.title + "-featured"}
@@ -431,7 +442,7 @@ export default function Projects() {
 							<div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-700 h-full flex flex-col">
 								{/* Project Image */}
 								<div className="relative overflow-hidden">
-									<div className="relative w-full h-48">
+									<div className="relative w-full h-40 sm:h-48">
 										<Image
 											src={project.image}
 											alt={project.title}
@@ -439,6 +450,7 @@ export default function Projects() {
 											className="object-cover group-hover:scale-110 transition-transform duration-500"
 											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 											loading="lazy"
+											quality={70}
 										/>
 									</div>
 									<div className="absolute top-4 left-4">
@@ -528,11 +540,10 @@ export default function Projects() {
 						<button
 							key={category}
 							onClick={() => setSelectedCategory(category)}
-							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-								selectedCategory === category
+							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
 									? "bg-indigo-600 text-white"
 									: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
-							}`}
+								}`}
 							type="button"
 							aria-pressed={selectedCategory === category}
 						>
@@ -563,6 +574,7 @@ export default function Projects() {
 											className="object-cover group-hover:scale-110 transition-transform duration-500"
 											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 											loading="lazy"
+											quality={70}
 										/>
 									</div>
 									<div className="absolute top-4 left-4">
