@@ -75,22 +75,22 @@ export default function About() {
           className="space-y-6"
         >
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            I&apos;m a <strong className="text-indigo-600">Full-Stack Software Developer</strong> with over 
-            <strong className="text-purple-600"> 5 years of experience</strong> crafting scalable web and mobile applications. 
+            I&apos;m a <strong className="text-indigo-600">Full-Stack Software Developer</strong> with over
+            <strong className="text-purple-600"> 5 years of experience</strong> crafting scalable web and mobile applications.
             My passion lies in building robust, user-centered products that solve real-world problems.
           </p>
-          
+
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            I specialize in modern web technologies like <strong>React</strong>, <strong>Next.js</strong>, 
-            and <strong>Node.js</strong>, while also building cross-platform mobile apps with 
-            <strong> Flutter</strong> and <strong>React Native</strong>. My backend expertise spans 
-            from <strong>Express.js</strong> to <strong>Laravel</strong>, with experience in various databases 
+            I specialize in modern web technologies like <strong>React</strong>, <strong>Next.js</strong>,
+            and <strong>Node.js</strong>, while also building cross-platform mobile apps with
+            <strong> Flutter</strong> and <strong>React Native</strong>. My backend expertise spans
+            from <strong>Express.js</strong> to <strong>Laravel</strong>, with experience in various databases
             and cloud platforms.
           </p>
 
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-            Whether it&lsquo;s architecting scalable systems, optimizing performance, or mentoring fellow developers, 
-            I&#39;m always pushing the boundaries of what&lsquo;s possible. I believe in clean architecture, 
+            Whether it&lsquo;s architecting scalable systems, optimizing performance, or mentoring fellow developers,
+            I&#39;m always pushing the boundaries of what&lsquo;s possible. I believe in clean architecture,
             intuitive design, and the power of collaboration.
           </p>
         </motion.div>
@@ -146,6 +146,24 @@ export default function About() {
           >
             <div className="text-purple-600 font-semibold">JavaScript Algorithms & Data Structures</div>
             <div className="text-sm text-slate-600 dark:text-slate-400">freeCodeCamp Certification</div>
+          </a>
+          <a
+            href="https://distinction.app/public-certificate/f717fdd2-7082-486d-8dab-2fab1fd853ce"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600 border border-slate-200 dark:border-slate-700"
+          >
+            <div className="text-indigo-600 font-semibold">Mastering Productivity, Collaboration & Problem Solving for High-Performers</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Certificate</div>
+          </a>
+          <a
+            href="https://distinction.app/public-certificate/7fb8e799-aead-48c0-9c8c-b7160e627c8a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600 border border-slate-200 dark:border-slate-700"
+          >
+            <div className="text-purple-600 font-semibold">Introduction To Web Development</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Certificate</div>
           </a>
         </div>
       </motion.div>
