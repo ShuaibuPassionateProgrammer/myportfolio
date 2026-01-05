@@ -165,6 +165,15 @@ export default function About() {
             <div className="text-purple-600 font-semibold">Introduction To Web Development</div>
             <div className="text-sm text-slate-600 dark:text-slate-400">Certificate</div>
           </a>
+          <a
+            href="https://drive.google.com/file/d/1exeLjKKm1nxHxpEzKpKTdl6NGGtvXJ3_/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur rounded-xl shadow p-4 transition hover:shadow-lg hover:ring-2 hover:ring-indigo-400 dark:hover:ring-indigo-600 border border-slate-200 dark:border-slate-700"
+          >
+            <div className="text-purple-600 font-semibold">FlexiSaf Frontend Certifacte</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Certificate</div>
+          </a>
         </div>
       </motion.div>
     </motion.section>
