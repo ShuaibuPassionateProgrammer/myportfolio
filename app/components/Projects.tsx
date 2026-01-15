@@ -7,6 +7,18 @@ import { ExternalLink, Github, Star, Users, Code } from "lucide-react";
 
 const projects = [
 	{
+		title: "MultiCMS",
+		description:
+			"A next-gen multi-tenant SaaS CMS platform built with Next.js, featuring tenant management, user authentication, comprehensive content management for posts, pages, and media. Utilizes MongoDB Atlas for data storage with subdomain-based tenant isolation for enterprise-grade scalability.",
+		image: "/projects/multicms.png",
+		tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS", "NextAuth"],
+		category: "Full-Stack",
+		demo: "https://multi-tenant-flame.vercel.app/",
+		code: "https://github.com/ShuaibuPassionateProgrammer/multi-tenant",
+		featured: true,
+		stats: { stars: 72, users: "2.5K+" },
+	},
+	{
 		title: "CartoCraft",
 		description:
 			"CartoCraft website built with Next.js and Tailwind CSS, featuring a modern design, dark mode, and seamless mobile responsiveness.",
@@ -301,8 +313,8 @@ export default function Projects() {
 								key={category}
 								onClick={() => setSelectedCategory(category)}
 								className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
-										? "bg-indigo-600 text-white"
-										: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
+									? "bg-indigo-600 text-white"
+									: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
 									}`}
 								type="button"
 								aria-pressed={selectedCategory === category}
@@ -541,8 +553,8 @@ export default function Projects() {
 							key={category}
 							onClick={() => setSelectedCategory(category)}
 							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
-									? "bg-indigo-600 text-white"
-									: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
+								? "bg-indigo-600 text-white"
+								: "bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-slate-700"
 								}`}
 							type="button"
 							aria-pressed={selectedCategory === category}
