@@ -7,6 +7,18 @@ import { ExternalLink, Github, Star, Users, Code } from "lucide-react";
 
 const projects = [
 	{
+		title: "NextMart Admin",
+		description:
+			"A modern, high-fidelity e-commerce admin dashboard built for managing retail operations, featuring a premium, enterprise-grade SaaS user experience.",
+		image: "/projects/nextmart.png",
+		tech: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Lucide React"],
+		category: "Full-Stack",
+		demo: "https://next-mart-admin.vercel.app/",
+		code: "https://github.com/ShuaibuPassionateProgrammer/NextMart-Admin",
+		featured: true,
+		stats: { stars: 85, users: "3.2K+" },
+	},
+	{
 		title: "MultiCMS",
 		description:
 			"A next-gen multi-tenant SaaS CMS platform built with Next.js, featuring tenant management, user authentication, comprehensive content management for posts, pages, and media. Utilizes MongoDB Atlas for data storage with subdomain-based tenant isolation for enterprise-grade scalability.",
