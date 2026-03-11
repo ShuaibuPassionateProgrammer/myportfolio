@@ -1,6 +1,7 @@
 "use client";
 
 import { Github, Linkedin, Mail, Twitter, ArrowRight } from "lucide-react";
+import { FaChevronDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -19,7 +20,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
+    <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
       {/* Ambient Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-400/10 dark:bg-indigo-600/10 rounded-full blur-3xl" />
@@ -73,7 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10"
+          className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-4"
         >
           With 5+ years of experience crafting scalable web and mobile applications.
           Passionate about building robust, user-centered products that solve real-world problems using modern technologies.
@@ -84,7 +85,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
           <a
             href="#projects"
@@ -129,20 +130,18 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        transition={{ delay: 1.5, duration: 0.6 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50"
       >
-        {/* <motion.div
-          animate={{ y: [0, 8, 0] }}
+        <motion.a
+          href="#about"
+          animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-8 h-12 rounded-full border-2 border-slate-300 dark:border-slate-600 flex items-start justify-center p-2"
+          className="inline-flex text-indigo-600 dark:text-indigo-400 drop-shadow-lg hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+          aria-label="Scroll to about section"
         >
-          <motion.div
-            animate={{ opacity: [1, 0.5, 1], y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1.5 h-1.5 rounded-full bg-indigo-500"
-          />
-        </motion.div> */}
+          <FaChevronDown size={32} />
+        </motion.a>
       </motion.div>
     </section>
   );
